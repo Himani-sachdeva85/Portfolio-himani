@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himani Sachdeva | Frontend Developer & UI/UX Designer Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Himani Sachdeva, a Frontend Developer, UI/UX Designer, and Graphic Designer based in Punjab, India. Specializing in modern, responsive web experiences.">
+    <meta name="keywords"
+        content="Himani Sachdeva, Frontend Developer, UI/UX Designer, Graphic Designer, Portfolio, Web Design, Responsive Web Development, Punjab, India">
+    <meta name="author" content="Himani Sachdeva">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+    <div class="custom-cursor-outline" id="customCursorOutline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <span class="loader-logo">HS</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Designing Experiences...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Himani Sachdeva Home">
+                <span class="logo-accent">&lt;</span>Himani<span class="logo-accent"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Open Navigation Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-gradients">
+                <div class="gradient-sphere sphere-1"></div>
+                <div class="gradient-sphere sphere-2"></div>
+                <div class="gradient-sphere sphere-3"></div>
+            </div>
+
+            <!-- Floating Background Shapes -->
+            <div class="floating-shape shape-1"><i class="fa-solid fa-code"></i></div>
+            <div class="floating-shape shape-2"><i class="fa-solid fa-palette"></i></div>
+            <div class="floating-shape shape-3"><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="floating-shape shape-4"><i class="fa-solid fa-compass-drafting"></i></div>
+
+            <div class="hero-container">
+                <!-- Glassmorphism Profile Card -->
+                <div class="hero-card fade-in-up">
+                    <div class="profile-img-container">
+                        <img src="images/profile.jpeg" alt="Himani Sachdeva profile headshot" class="profile-img"
+                            loading="eager">
+                        <div class="profile-glow"></div>
+                    </div>
+
+                    <div class="hero-info">
+                        <span class="hero-greeting">Welcome to my space</span>
+                        <h1 class="hero-name">Hi, I'm Himani Sachdeva</h1>
+                        <h2 class="hero-subtitle">
+                            <span class="typed-text-target"></span><span class="typed-cursor">|</span>
+                        </h2>
+                        <p class="hero-desc">
+                            I create modern, responsive, and user-friendly digital experiences by combining clean code
+                            with creative design. My passion is transforming ideas into visually appealing websites that
+                            are fast, accessible, and intuitive for every user.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Projects</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Contact Me</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                            <a href="images/Himani_Sachdeva_FlowCV_Resume_2026-07-12.pdf" class="btn btn-outline" download="Himani_Sachdeva_Resume.pdf">
+                                <span>Download Resume</span>
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text font-accent">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-tagline">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content reveal-on-scroll">
+                        <p class="about-bio lead">
+                            Hello! I'm <strong>Himani Sachdeva</strong>, a passionate Frontend Developer and UI/UX
+                            Designer with a strong eye for detail, creativity, and user-centered design.
+                        </p>
+                        <p class="about-bio">
+                            I enjoy turning ideas into modern, responsive, and interactive websites that deliver
+                            exceptional user experiences. My work combines clean development practices with thoughtful
+                            design, allowing me to create products that are both functional and visually engaging.
+                        </p>
+                        <p class="about-bio">
+                            I'm always exploring new technologies and design trends to continuously improve my skills
+                            and build better digital experiences.
+                        </p>
+
+                        <div class="about-meta">
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
+                                <span class="meta-value">Bachelor of Computer Applications (BCA)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-map-location-dot"></i> Location:</span>
+                                <span class="meta-value">Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-expertise-card reveal-on-scroll">
+                        <h3 class="card-subtitle">Experience & Expertise</h3>
+                        <ul class="expertise-list">
+                            <li>
+                                <div class="expertise-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="expertise-info">
+                                    <h4>Frontend Web Development</h4>
+                                    <p>Building semantic structure and solid functional layers with HTML/JS.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expertise-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="expertise-info">
+                                    <h4>Responsive Website Design</h4>
+                                    <p>Crafting CSS layouts optimized for smartphones, tablets, and desktops.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expertise-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <div class="expertise-info">
+                                    <h4>UI/UX Design</h4>
+                                    <p>Creating user-centered design flows, wireframes, and prototypes.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expertise-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                                <div class="expertise-info">
+                                    <h4>Graphic Design</h4>
+                                    <p>Designing digital marketing graphics, assets, layouts, and typography.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expertise-icon"><i class="fa-solid fa-signature"></i></div>
+                                <div class="expertise-info">
+                                    <h4>Brand Identity Design</h4>
+                                    <p>Defining memorable brand colors, typography, logos, and layouts.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-tagline">My creative showcase</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projects Category Filter -->
+                <div class="filter-container reveal-on-scroll">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web-development">Web Development</button>
+                    <button class="filter-btn" data-filter="graphics">Graphics</button>
+                    <button class="filter-btn" data-filter="uiux-design">UI/UX Design</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid reveal-on-scroll">
+                    <!-- Project 1: University Website -->
+                    <article class="project-card" data-category="web-development">
+                        <div class="project-img-wrapper">
+                            <img src="images/Chandigarh-University_-img.webp" alt="University website UI layout preview"
+                                class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="lightbox-trigger btn-circle" aria-label="Enlarge image"
+                                        data-img="images/university.png" data-title="University Website"
+                                        data-desc="A fully responsive university website featuring a modern interface, mega navigation menu, animated hero section, course pages, and mobile-first design.">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <a href=" https://himani-sachdeva85.github.io/Chandigarh-university/" class="btn-circle" aria-label="View live project" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category font-accent">Web Development</span>
+                            <h3 class="project-title">University Website</h3>
+                            <p class="project-description">
+                                A fully responsive university website featuring a modern interface, mega navigation
+                                menu, animated hero section, course pages, and mobile-first design.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: E-Commerce Landing Page -->
+                    <article class="project-card" data-category="web-development">
+                        <div class="project-img-wrapper">
+                            <img src="images/ecommerce.png" alt="E-commerce shopping page preview" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="lightbox-trigger btn-circle" aria-label="Enlarge image"
+                                        data-img="images/ecommerce.png" data-title="E-Commerce Landing Page"
+                                        data-desc="A modern shopping landing page focused on performance, user experience, responsive layouts, and attractive product presentation.">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <a href="#" class="btn-circle" aria-label="View live project" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category font-accent">Web Development</span>
+                            <h3 class="project-title">E-Commerce Landing Page</h3>
+                            <p class="project-description">
+                                A modern shopping landing page focused on performance, user experience, responsive
+                                layouts, and attractive product presentation.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Restaurant Website -->
+                    <article class="project-card" data-category="web-development">
+                        <div class="project-img-wrapper">
+                            <img src="images/restaurant.png" alt="Luxury restaurant website preview" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="lightbox-trigger btn-circle" aria-label="Enlarge image"
+                                        data-img="images/restaurant.png" data-title="Restaurant Website"
+                                        data-desc="A responsive restaurant website with an elegant design, online reservation section, food menu, gallery, and contact information.">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <a href="#" class="btn-circle" aria-label="View live project" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category font-accent">Web Development</span>
+                            <h3 class="project-title">Restaurant Website</h3>
+                            <p class="project-description">
+                                A responsive restaurant website with an elegant design, online reservation section, food
+                                menu, gallery, and contact information.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4:Graphics -->
+                    <article class="project-card" data-category="graphics">
+                        <div class="project-img-wrapper">
+                            <img src="images/graphics.jpg" alt="SaaS admin dashboard layout design preview"
+                                class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="lightbox-trigger btn-circle" aria-label="Enlarge image"
+                                        data-img="images/graphics.jpg" data-title="graphics"
+                                        data-desc="A clean and modern admin dashboard designed using contemporary UI principles with reusable components and data visualization.">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <a href="#" class="btn-circle" aria-label="View live project" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category font-accent">Graphics</span>
+                            <h3 class="project-title">Graphics</h3>
+                            <p class="project-description">
+                                A clean and modern admin dashboard designed using contemporary UI principles with
+                                reusable components and data visualization.
+                            </p>
+                            <div class="project-tech">
+                                <span>Adobe Photoshop</span>
+                                <span>Adobe Illustrator</span>
+
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <!-- Project 5: Dashboard UI -->
+                    <article class="project-card" data-category="uiux-design">
+                        <div class="project-img-wrapper">
+                            <img src="images/dashboard.png" alt="SaaS admin dashboard layout design preview"
+                                class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <button class="lightbox-trigger btn-circle" aria-label="Enlarge image"
+                                        data-img="images/dashboard.png" data-title="Dashboard UI"
+                                        data-desc="A clean and modern admin dashboard designed using contemporary UI principles with reusable components and data visualization.">
+                                        <i class="fa-solid fa-expand"></i>
+                                    </button>
+                                    <a href="#" class="btn-circle" aria-label="View design file" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-brands fa-figma"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category font-accent">UI/UX Design</span>
+                            <h3 class="project-title">Dashboard UI</h3>
+                            <p class="project-description">
+                                A clean and modern admin dashboard designed using contemporary UI principles with
+                                reusable components and data visualization.
+                            </p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>React.js</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Lightbox Modal -->
+        <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close image preview">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous project image"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="lightbox-content">
+                <div class="lightbox-img-container">
+                    <img src="" alt="" id="lightboxImg">
+                </div>
+                <div class="lightbox-meta">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxDesc"></p>
+                    <div class="lightbox-counter"><span id="lightboxCurrentIndex">1</span> / <span
+                            id="lightboxTotalCount">4</span></div>
+                </div>
+            </div>
+
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next project image"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-tagline">My technical toolbox</span>
+                    <h2 class="section-title">Skills & Abilities</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Column 1: Frontend Development -->
+                    <div class="skills-column card-glass reveal-on-scroll">
+                        <h3 class="skills-col-title"><i class="fa-solid fa-code"></i> Frontend Development</h3>
+                        <div class="progress-skills">
+                            <!-- Skill 1 -->
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3 / Flexbox / Grid</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 4 -->
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 5 -->
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: UI/UX & Graphic Design -->
+                    <div class="skills-column card-glass reveal-on-scroll">
+                        <h3 class="skills-col-title"><i class="fa-solid fa-palette"></i> Design & Creative Tools</h3>
+                        <div class="circular-skills-container">
+                            <!-- Circular Skill 1 -->
+                            <div class="circle-skill-item">
+                                <div class="circle-progress" data-progress="90" style="--percent: 0;">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-indicator"></circle>
+                                    </svg>
+                                    <div class="circle-number font-accent">90%</div>
+                                </div>
+                                <span class="circle-skill-name">Figma</span>
+                            </div>
+                            <!-- Circular Skill 2 -->
+                            <div class="circle-skill-item">
+                                <div class="circle-progress" data-progress="80" style="--percent: 0;">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-indicator"></circle>
+                                    </svg>
+                                    <div class="circle-number font-accent">80%</div>
+                                </div>
+                                <span class="circle-skill-name">Photoshop</span>
+                            </div>
+                            <!-- Circular Skill 3 -->
+                            <div class="circle-skill-item">
+                                <div class="circle-progress" data-progress="85" style="--percent: 0;">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-indicator"></circle>
+                                    </svg>
+                                    <div class="circle-number font-accent">85%</div>
+                                </div>
+                                <span class="circle-skill-name">Illustrator</span>
+                            </div>
+                            <!-- Circular Skill 4 -->
+                            <div class="circle-skill-item">
+                                <div class="circle-progress" data-progress="70" style="--percent: 0;">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-indicator"></circle>
+                                    </svg>
+                                    <div class="circle-number font-accent">70%</div>
+                                </div>
+                                <span class="circle-skill-name">InDesign</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Soft Skills -->
+                    <div class="skills-column card-glass reveal-on-scroll">
+                        <h3 class="skills-col-title"><i class="fa-solid fa-users"></i> Professional Soft Skills</h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <span>Creative Thinking</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Team Collaboration</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Time Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section-padding" id="services">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-tagline">Professional solutions</span>
+                    <h2 class="section-title">What I Offer</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Web Development -->
+                    <div class="service-card reveal-on-scroll">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service-title">Responsive Web Development</h3>
+                        <p class="service-desc">Build fast, responsive, SEO-friendly websites optimized for every screen
+                            size.</p>
+                        <div class="service-divider"></div>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Responsive Layouts</li>
+                            <li><i class="fa-solid fa-check"></i> Business Websites</li>
+                            <li><i class="fa-solid fa-check"></i> Landing Pages</li>
+                            <li><i class="fa-solid fa-check"></i> Portfolio Websites</li>
+                            <li><i class="fa-solid fa-check"></i> Website Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2: UI/UX Design -->
+                    <div class="service-card reveal-on-scroll">
+                        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-desc">Design user-centered interfaces that provide intuitive and engaging
+                            digital experiences.</p>
+                        <div class="service-divider"></div>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Wireframes</li>
+                            <li><i class="fa-solid fa-check"></i> UI Design</li>
+                            <li><i class="fa-solid fa-check"></i> Mobile App Design</li>
+                            <li><i class="fa-solid fa-check"></i> Website Design</li>
+                            <li><i class="fa-solid fa-check"></i> Interactive Prototypes</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3: Graphic Design -->
+                    <div class="service-card reveal-on-scroll">
+                        <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3 class="service-title">Graphic Design</h3>
+                        <p class="service-desc">Create visually compelling graphics that strengthen brand communication.
+                        </p>
+                        <div class="service-divider"></div>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Social Media Posts</li>
+                            <li><i class="fa-solid fa-check"></i> Banners</li>
+                            <li><i class="fa-solid fa-check"></i> Posters</li>
+                            <li><i class="fa-solid fa-check"></i> Business Cards</li>
+                            <li><i class="fa-solid fa-check"></i> Marketing Materials</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4: Brand Identity Design -->
+                    <div class="service-card reveal-on-scroll">
+                        <div class="service-icon"><i class="fa-solid fa-signature"></i></div>
+                        <h3 class="service-title">Brand Identity Design</h3>
+                        <p class="service-desc">Build memorable visual identities that help brands stand out.</p>
+                        <div class="service-divider"></div>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Logo Design</li>
+                            <li><i class="fa-solid fa-check"></i> Brand Guidelines</li>
+                            <li><i class="fa-solid fa-check"></i> Color Palette</li>
+                            <li><i class="fa-solid fa-check"></i> Typography</li>
+                            <li><i class="fa-solid fa-check"></i> Brand Assets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <!-- <section class="stats-section section-padding">
+            <div class="stats-bg-gradient"></div>
+            <div class="container">
+                <div class="stats-grid"> -->
+        <!-- Stat 1 -->
+        <!-- <div class="stat-card reveal-on-scroll">
+            <div class="stat-icon"><i class="fa-solid fa-check-double"></i></div>
+            <span class="stat-number font-accent" data-target="10">0</span><span
+                class="stat-suffix font-accent">+</span>
+            <p class="stat-label">Projects Completed</p> -->
+        </div>
+        <!-- Stat 2 -->
+        <!-- <div class="stat-card reveal-on-scroll">
+            <div class="stat-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+            <span class="stat-number font-accent" data-target="2">0</span><span class="stat-suffix font-accent">+</span>
+            <p class="stat-label">Years Learning & Building</p>
+        </div> -->
+        <!-- Stat 3 -->
+        <!-- <div class="stat-card reveal-on-scroll">
+            <div class="stat-icon"><i class="fa-solid fa-maximize"></i></div>
+            <span class="stat-number font-accent" data-target="100">0</span><span
+                class="stat-suffix font-accent">%</span>
+            <p class="stat-label">Responsive Designs</p>
+        </div> -->
+        <!-- Stat 4 -->
+        <!-- <div class="stat-card reveal-on-scroll">
+            <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+            <span class="stat-number font-accent" data-target="5">0</span><span class="stat-suffix font-accent">+</span>
+            <p class="stat-label">Design Tools Mastered</p>
+        </div>
+        </div>
+        </div>
+        </section> -->
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header text-center reveal-on-scroll">
+                    <span class="section-tagline">Reach out to connect</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-desc max-w-600 mx-auto">
+                        I'm always excited to discuss new opportunities, creative collaborations, or exciting projects.
+                        Feel free to get in touch!
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info-panel reveal-on-scroll">
+                        <h3 class="panel-title">Contact Information</h3>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-text">
+                                    <span>Email</span>
+                                    <a href="mailto:himani.sachdeva.dev@gmail.com">sachdevahimani359@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="info-text">
+                                    <span>Phone</span>
+                                    <a href="tel:+919999999999">+91 8528937200</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-text">
+                                    <span>Location</span>
+                                    <p>Punjab, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-panel">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://behance.net" target="_blank" rel="noopener" aria-label="Behance"><i
+                                        class="fa-brands fa-behance"></i></a>
+                                <a href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble"><i
+                                        class="fa-brands fa-dribbble"></i></a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card reveal-on-scroll">
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="fullName" name="fullName" placeholder="John Doe"
+                                            required>
+                                    </div>
+                                    <span class="error-msg" id="fullNameError">Full Name is required</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="emailAddress">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                        <input type="email" id="emailAddress" name="emailAddress"
+                                            placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="emailAddressError">Please enter a valid email
+                                        address</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-circle-info input-icon"></i>
+                                        <input type="text" id="subject" name="subject" placeholder="Project Discussion"
+                                            required>
+                                    </div>
+                                    <span class="error-msg" id="subjectError">Subject is required</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <div class="input-wrapper">
+                                        <textarea id="message" name="message" rows="5"
+                                            placeholder="Hi Himani, I would like to discuss..." required></textarea>
+                                    </div>
+                                    <span class="error-msg" id="messageError">Message cannot be empty</span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status-msg" id="formStatusMsg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top of the page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">&lt;Himani /&gt;</span>
+                    <p class="footer-sub">Frontend Developer • UI/UX Designer • Graphic Designer</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://behance.net" target="_blank" rel="noopener" aria-label="Behance"><i
+                            class="fa-brands fa-behance"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Himani Sachdeva. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</body>
+
+</html>
